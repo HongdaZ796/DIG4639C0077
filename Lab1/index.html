@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 1</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      class Hello extends React.Component {
+        state = {
+          name: 'Joker',
+          age: 18
+        }
+        handleclick = (e) => {
+          console.log(this.state.name);
+        }
+        handleHover = (e) => {
+          console.log(e.target, e.clientY);
+        }
+        handleCopy = (e)=> {
+          console.log("Try to be original");
+        }
+        render() {
+          return (
+            <div>
+              <h1>Hello, World!</h1>
+              <p>My name is: { this.state.name }</p>
+              <button onClick={this.handleclick}>Click Me</button>
+              <button onMouseOver={this.handleHover}>Hover Me</button>
+              <p onCopy={this.handleCopy}>Do not copy</p>
+            </div>
+          )
+        }
+      }
+
+      ReactDOM.render(<Hello />, document.getElementById('root'))
+
+    </script>
+
+  </body>
+</html>
