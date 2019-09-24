@@ -1,4 +1,5 @@
 const Entry = require('./Entry.js');
+const Ninja = require('./Ninja.js');
 const chalk = require('Chalk');
 
 let entry = new Entry(
@@ -10,4 +11,9 @@ let entry = new Entry(
   }
 );
 
-console.log(entry.render());
+let ninja = new Ninja({
+  name: "Joker",
+  age: '18'
+})
+
+console.log(ninja.render());
