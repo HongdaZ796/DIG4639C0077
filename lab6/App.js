@@ -43,12 +43,12 @@ export default class App extends Component {
       <Container>
         <View style={styles.whiteSpace}></View>
         <Item>
-          <Title>Monster Hunter: World Iceborne</Title>
-          <Content>
+          <Text style={styles.title}>Monster Hunter: World Iceborne</Text>
+          <Text style={styles.content}>
             Addictive in the best way. The game is amazing, and multiplayer
             could be smoother to get together. However, so long as it is not a
             main story mission, things are easy to join.
-          </Content>
+          </Text>
         </Item>
         <View style={styles.whiteSpace}></View>
       </Container>
@@ -60,5 +60,20 @@ const styles = StyleSheet.create({
   whiteSpace: {
     flex: 1,
     backgroundColor: "white"
+  },
+
+  title: {
+    fontSize: 24,
+    fontFamily: "Arial",
+    fontWeight: "bold",
+    letterSpacing: 2,
+    textAlign: "center",
+    flex: 1
+  },
+
+  content: {
+    fontSize: 16,
+    fontFamily: "Arial",
+    flex: 2
   }
 });
