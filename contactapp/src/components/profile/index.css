@@ -1,0 +1,21 @@
+.profile-container {
+  min-width: 600px;
+  max-width: 800px;
+  /* display: none; */
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em 2.5em;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.profile-container-display {
+  /* display: block; */
+  transform: translate(-50%, -300%);
+  opacity: 1;
+}

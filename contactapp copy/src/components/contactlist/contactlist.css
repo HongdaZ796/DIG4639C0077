@@ -1,0 +1,8 @@
+.contact-sidebar {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.list-group {
+  font-size: 0.9rem;
+}
